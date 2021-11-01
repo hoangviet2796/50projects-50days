@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    position: relative;
+    height: fit-content;
+}
+.paragraphContainer {
+    padding: 100px 50px;
+    background-color: white;
+    transform-origin: top left;
+    transition: 0.3s linear;
+}
+
+.paragraphContainer img {
+    width: 100%;
+
+}
+.showNav {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transform-origin: center;
+    background-color: pink;
+    transition: 0.3s linear;
+    z-index: 2;
+}
+
+.bar {
+    position: absolute;
+    top: 67%;
+    left: 60%;
+    width: 45px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    top: 67%;
+    left: 20%;
+    width: 45px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: white;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.close::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 5px;
+    border-radius: 10px;
+    transform: rotate(-90deg);
+    background-color: white;
+}
+
+.bar::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 45px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+.bar::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    width: 45px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.navContainer {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: grey;
+    
+    z-index: -1;
+}
+
+.navContainer ul {
+    list-style: none;
+    margin-bottom: 150px;
+}
+
+.navContainer ul li {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}

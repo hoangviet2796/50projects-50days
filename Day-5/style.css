@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    background-image: url(./image/luis-gherasim-DlpU8vodd-o-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(100px);
+    transition: 0.3s linear;
+}
+
+.count {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-size: 50px;
+    transition: 0.3s ease-in-out;
+}
